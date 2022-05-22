@@ -46,8 +46,9 @@ $(document).ready(function(){
 			event.preventDefault();
 			var anchor = $(this);
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 0
+				scrollTop: $(anchor.attr('href')).offset().top - 90
 			}, 1200,'easeInOutExpo');
+			$(".navbar-toggle").click();
 		});
 		
 		$('body').scrollspy({
